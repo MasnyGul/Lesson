@@ -13,28 +13,61 @@
             <div class="menu">
                 <div>
                     <p>Flex-Direction</p> 
-                    <select name="" id=""></select>
+                    <select name="" id="Direction" onchange="direction()">
+                        <option value="Row">Row</option>
+                        <option value="Column">Column</option>
+                        <option value="row-reverse">Row-reverse</option>
+                        <option value="Column-reverse">Column-reverse</option>
+                    </select>
                 </div>
                 <div>
                     <p>Flex-wrap</p> 
-                    <select name="" id=""></select>
+                    <select name="" id="wrap" onchange="wrap()">
+                        <option value="wrap">wrap</option>
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                    </select>
                 </div>
                 <div>
                     <p>Justify-content</p> 
-                    <select name="" id=""></select>
+                    <select name="" id="Justify" onchange="justify()">
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="space-between">space-between</option>
+                        <option value="space-around">space-around</option>
+                    </select>    
                 </div>
                 <div>
                     <p>Align-items</p> 
-                    <select name="" id=""></select>
+                    <select name="" id="items" onchange="items()">
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="baseline">baseline</option>
+                        <option value="stretch">stretch</option>
+                        
+                    </select>
                 </div>
-                <div class="s">
+                <div>
                     <p>align-content</p> 
-                    <select name="" id=""></select>
-                </div>                             
+                    <select name="" id="content" onchange="content()">
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="space-between">space-between</option>
+                        <option value="space-around">space-around</option>
+                        <option value="stretch">stretch</option>
+                    </select>
+                </div>
+                <div>
+                    <button onclick="Add()">Add</button>
+                    <button onclick="Remove()">Remove</button>
+                </div>
+                <button onclick="reset()">Reset
+                </button>                            
             </div>
             <div class="display">
-                <div></div>
-                <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -42,4 +75,5 @@
         </section>
     </main>
 </body>
+<script src="java.js"></script>
 </html>

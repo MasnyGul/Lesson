@@ -1,0 +1,32 @@
+*,*::after,*::before{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+    radial-gradient(circle,
+    rgb(179, 179, 20) 25%,
+    rgba(0,0,0,1)100%);
+}
+
+.icon{
+    font-size: 15rem !important;
+    color: #ffe600;
+}
+
+.neon{
+    text-shadow:
+    0 0 0.5rem #ffe600,
+    0 0 1rem #ffe600,
+    0 0 1.5rem #ffe600,
+    0 0 2.5rem rgb(158, 158, 55),
+    0 0 4rem rgb(158, 158, 55),
+    0 0 6rem rgb(158, 158, 55),
+    0 0 9.5rem rgb(158, 158, 55);
+}

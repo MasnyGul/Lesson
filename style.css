@@ -63,6 +63,9 @@ main h1{
     width: 120px;
     background-color: azure;
     opacity: 0.8;
+    overflow: hidden;
+    display: flex;
+    align-items:center ;
 }
 
 .grid div:hover{
@@ -78,7 +81,6 @@ footer{
     height: 300px;
 }
 
-.grid div:nth-child(1){
-    background-image: url(1.PNG);
-    background-size: cover;
+div img{
+    width: 100%;
 }

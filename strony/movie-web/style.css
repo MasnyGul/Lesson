@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 *,*::after,*::before{
     margin:0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -14,7 +18,9 @@ body{
 
 
 h1{
+    padding-top: 50px;
     text-align: center;
+    color: aqua;
 }
 
 main{
@@ -105,3 +111,22 @@ main{
     color: whitesmoke;
 }
 
+#mando{
+    background-image: url(960x0.webp);
+    background-size: cover;
+}
+#star{
+    background-image: url(star.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#obi{
+    background-image: url(obi.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+.card-container p{
+    color: whitesmoke;
+    font-size: 2rem;
+}

@@ -65,9 +65,9 @@ search.addEventListener('click', () => {
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
             weatherBox.style.display = '';
-            weatherDetails.style.display = '';
+            weatherdetails.style.display = '';
             weatherBox.classList.add('fadeIn');
-            weatherDetails.classList.add('fadeIn');
+            weatherdetails.classList.add('fadeIn');
             container.style.height = '590px';
 
 

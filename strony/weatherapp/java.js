@@ -3,6 +3,7 @@ const search=document.querySelector('.search-box button');
 const weatherBox=document.querySelector('.weather-box');
 const weatherdetails=document.querySelector('.weather-details');
 const error404=document.querySelector('.not-found');
+const hero=document.querySelector('.hero');
 
 search.addEventListener('click', () => {
 
@@ -59,7 +60,7 @@ search.addEventListener('click', () => {
                     image.src = '';
             };
 
-            temperature.innerHTML = `10<span>°C</span>`;
+            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
@@ -69,7 +70,9 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherdetails.classList.add('fadeIn');
             container.style.height = '590px';
-
+            container.style.background='white';
+            hero.style.backgroundImage='none'
+            
 
 
 

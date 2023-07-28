@@ -19,11 +19,12 @@ body{
     width:400px;
     height: 105px;
     padding: 28px 32px;
-    background: #fff;
     overflow: hidden;
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6s ease-out;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.1);
 }
 
 .search-box{
@@ -40,7 +41,8 @@ body{
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
-    padding-left: 32px;    
+    padding-left: 32px;
+    background-color: transparent;
 }
 
 .search-box input::placeholder{
@@ -182,4 +184,15 @@ body{
         opacity: 1;
     }
 }
-    
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height:30vh;
+    background-image: url(./picture/hero.webp);
+    background-size: cover;
+    border-radius: 50px;
+}

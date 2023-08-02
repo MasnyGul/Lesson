@@ -7,7 +7,7 @@ const chartOptions = {
     },
     colors:['#ccc'],
     series:[{name:'Views',data:[18,50,42,94,41,65]}],
-    dataLabels:{enable:false},
+    dataLabels:{enabled:false},
     stroke:{width:3,curve:'smooth'},
     fill:{
         type:'gradient',
@@ -21,7 +21,7 @@ const chartOptions = {
     xaxis:{
         categories:['Feb','Apr','Jun','Aug','Oct','Dec'],
         axisBorder:{show:false},
-        labels:{style:{colors:'rgba(0,0,0,0.7)',FontFamilty:'Poppins'}}
+        labels:{style:{colors:'rgba(0,0,0,0.8)',FontFamilty:'Poppins'}}
     },
     yaxis:{show:false},
     grid:{borderColor:'rgba(0,0,0,0)',padding:{ top:-30,bottom:-8,left:12,right:12}},

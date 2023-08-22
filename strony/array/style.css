@@ -32,8 +32,10 @@ width: 300px;
 }
 
 .odp{
-height: 50px;
+min-height: 60px;
 width: 200px;
+word-wrap: break-word;
+display: inline-block;
 }
 
 input{
@@ -71,4 +73,21 @@ button:active,.przy div:active{
     backdrop-filter: blur(10px);
     background-color: rgba(0,0,0,0.4);
     right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+
+.cos p{
+    background-color: #9198e5;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
 }

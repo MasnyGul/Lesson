@@ -6,6 +6,7 @@ const pl=document.querySelector('#plus')
 const licz=document.querySelector('h5')
 const cos=document.querySelector('.cos')
 const array=[];
+var stachu="";
 pl.addEventListener('click', () => {
     
     if(document.querySelector('h5').innerHTML<10)
@@ -17,7 +18,12 @@ pl.addEventListener('click', () => {
     liczba++;
     licz.innerHTML=liczba;
     console.log(liczba);     
-    console.log(array) 
+    console.log(array)
+    stachu="";
+    for(let i=0;i<array.length;i++){
+        stachu=stachu + "<p>"+array[i]+"</p>";
+    };
+    cos.innerHTML=stachu;
     }
     }
     else 
@@ -34,11 +40,13 @@ min.addEventListener('click', () => {
     licz.innerHTML=liczba;
     console.log(liczba);
     console.log(array);
-    let stachu;
     
-
-
-    cos.innerHTML=for(array.lengthz);
+    
+    stachu="";
+    for(let i=0;i<array.length;i++){
+        stachu=stachu + "<p>"+array[i]+"</p>";
+    };
+    cos.innerHTML=stachu;
     }
     else
     rez.value='';  
@@ -52,7 +60,12 @@ btn.addEventListener('click', () => {
     {
     array.push(rez.value);
     odp.innerHTML=array;
-    console.log(array);  
+    console.log(array);
+    stachu="";
+    for(let i=0;i<array.length;i++){
+        stachu=stachu + "<p>"+array[i]+"</p>";
+    };
+    cos.innerHTML=stachu;
     }
     else
     odp.innerHTML=array;

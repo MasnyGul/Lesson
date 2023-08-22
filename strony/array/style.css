@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle,rgb(194, 182, 182), #9198e5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blok{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.rezult{
+height: 200px;
+width: 300px;
+}
+
+.odp{
+height: 50px;
+width: 200px;
+}
+
+input{
+    background: transparent;
+    width: auto;
+    height: 50px;
+}
+
+button,.przy div{
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: black 1px solid;
+}
+
+.przy{
+    display: flex;
+    gap: 5px;
+}
+
+button:hover,.przy div:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+button:active,.przy div:active{
+    background: rgba(0,0,0,0.8);
+}
+
+.cos{
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    border-radius: 50px;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4);
+    right: 50px;
+}

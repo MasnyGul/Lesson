@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    --bg:rgb(237, 206, 149);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    background-color: var(--bg);
+    height: 100vh;
+    gap: 50px;
+    transition: all 1s;
+    overflow: hidden;
+    
+}
+
+header{
+    margin-top: 50px;
+    height: 75px;
+    width: 800px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+}
+header ul{
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+
+ header ul li{
+    display: inline;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition:background 0.5s;
+ }
+
+ li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+ }
+
+li:hover{
+    background-color: var(--bg);
+}
+
+
+main{
+    width: 80%;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+.card{
+    margin-left: 35vw;
+    height: auto;
+    height: 800px;
+    width: 600px;
+    border-radius: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.6s;
+}
+
+.card-content{
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+    transform: translateX(65%);
+}
+
+.card-content::after{
+    content: "";
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    transform: translate(10%,-12%);
+    z-index: -1;
+}
+
+
+
+.card-content img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(40%,20%);
+    animation: sto infinite 3s ease-in-out;
+}
+
+img.zdj{
+    animation: skok infinite 2s ease-in-out;
+    position: absolute;
+    scale: 0.9;
+}
+
+@keyframes skok {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(15px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+@keyframes sto {
+    0%{
+        transform: rotate(0) translate(40%,20%);
+        scale: 1;
+    }
+    25%{
+        transform: rotate(-5deg) translate(40%,20%);
+        scale: 0.95;
+    }
+    50%{
+        transform: rotate(0deg) translate(40%,20%);
+        scale: 1;
+    }
+    75%{
+        transform: rotate(-5deg) translate(40%,20%);
+        scale: 0.95;
+    }
+    100%{
+        
+        transform: rotate(0deg) translate(40%,20%);
+        scale: 1;
+    }
+}

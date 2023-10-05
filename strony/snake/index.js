@@ -96,10 +96,15 @@ start.addEventListener("click",function(){
 
             appl[0][0]=Math.floor((Math.random() * 8)+1);
             appl[0][1]=Math.floor((Math.random() * 8)+1);
-                while(snak[0][0]==appl[0][0]&&snak[0][1]==appl[0][1])
+
+                for(i=0;i<(wynik+1);i++)
                 {
-                    appl[0][0]=Math.floor((Math.random() * 8)+1);
-                    appl[0][1]=Math.floor((Math.random() * 8)+1);
+                    while(snak[i][0]==appl[0][0]&&snak[i][1]==appl[0][1])
+                    {
+                        appl[0][0]=Math.floor((Math.random() * 8)+1);
+                        appl[0][1]=Math.floor((Math.random() * 8)+1);
+                        i=0;
+                    }
                 }
             apple.style.gridArea=appl[0][0]+"/"+appl[0][1];
             }
